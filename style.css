@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(11, 15, 24);
+    color: white;
+}
+
+.poster {
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.err {
+    color: red;
+}
+
+.resultbefore {
+    text-align: center;
+}
+
+.resultafter {
+    padding: 0 80px;
+    display: flex;
+    
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card {
+    display: flex;
+    background-color: rgb(21, 31, 50);
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.textcard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 50px;
+
+    color: white;
+    overflow: hidden;
+}
+
+.inputs {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+input {
+    width: 300px;
+    padding: 10px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+input:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    background-color: rgb(0, 255, 0, 0.5);
+    padding: 5px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn:active {
+    background-color: rgb(0, 255, 0, 0.7);
+}
+
+.load {
+    text-align: center;
+    font-size: 20px;
+    display: none;
+}
+
+.gene {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 55px;
+    transition: transform 0.3s ease;
+    color: white;
+
+}
+
+.gene:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .resultafter {
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+    .textcard {
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+    .poster {
+        height: 300px;
+    }
+
+    .gene {
+        background-color: rgb(0, 0, 0, 0.5);
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    .inputs {
+        gap: 15px;
+
+    }
+
+    .btn {
+        background-color: rgb(0, 255, 0, 0.5);
+        padding: 1px 20px;
+        font-size: 16px;
+    }
+
+    input {
+        width: 250px;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card{
+        flex-direction: column;
+    }
+     input {
+        width: 200px;
+
+    }
+    .about {
+        font-size: 16px;
+    }
+
+    .textcard {
+    
+        padding: 20px;
+        font-size: 16px;
+    }
+    .poster{
+        width: 70%;
+        height:300px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .poster{
+        width:70%;
+        height:200px ;
+    }
+   
+     .gene {
+        font-size: 14px;
+    }
+    .textcard{
+        padding: 10px;
+    }
+
+}
